@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="title" id="title">
+            How Lucky You Are?
+        </h1>
+        <p class="between">(Between 1 and 20)</p>
+        <button class="btn again" id="again">
+            Again!
+        </button>
+        
+    </header>
+    <div id="bgmain">
+    <main id="main">
+        <section class="left">
+            <div class="number">Enter the Guess Number Below!</div>
+            <input type="number" class="guess" id="guessing" type="number" value="0"/>
+            <button class="btn checkbtn" id="check">
+                Check!
+            </button>
+        </section>
+        <section class="right">
+            <p class="message" id="message">Start Guessing...</p>
+            <p class="label-score">
+                Score:<br>
+                <span class="score" id="score"></span>
+            </p>
+        </section>
+    </main>
+    <section>
+        <p class="label-hscore">
+            HIGH SCORE:<br>
+            <span class="hscore" id="hscore"></span>
+        </p>
+    </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
